@@ -9,7 +9,6 @@ $n = $_POST['n'];
 
 if ($n >= 1) {
     $suma = 0;
-
     for ($i=0; $i <= $n ; $i++) { 
         $suma += $i;
     }

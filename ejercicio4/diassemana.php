@@ -8,7 +8,7 @@ Si el número está fuera de ese rango, muestra un mensaje de error. */
 
 $day = $_POST['day'];
 
-
+//lista con su clave y valor asociados segun el dia de la semana
 $days = [
     1 => "Lunes",
     2 => "Martes",
@@ -19,7 +19,7 @@ $days = [
     7 => "Domingo"
 ];
 
-// If the key exists do the if thing
+// si la clave dentro del array existe entonces la busca sino, te da el error.
 if (array_key_exists($day,$days)){
     echo "Has puesto el número $day, eso significa que el dia es: $days[$day]";
 }
