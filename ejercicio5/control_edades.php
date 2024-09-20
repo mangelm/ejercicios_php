@@ -16,7 +16,7 @@ if ($old < 12) {
 } elseif ($old >= 12 && $old <= 17) {
     echo "Adolescente";
 }
-elseif ($old >= 18 && $old <= 60) {
+elseif ($old >= 18 || $old <= 60) {
     echo "Adulto";
 }  
 else {
