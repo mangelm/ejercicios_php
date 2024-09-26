@@ -8,5 +8,8 @@ $name = $_POST['name'];
 $surname = $_POST['surname'];
 
 echo "¡Hola $name $surname!";
+
+//otra solucion 
+//echo "Hola " . htmlspecialchars( $nombre) . " " . htmlspecialchars($apellido);
 ?>
 

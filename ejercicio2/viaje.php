@@ -6,9 +6,26 @@ y la velocidad promedio esperada (en km/h).
 Al enviar el formulario, el programa debe calcular 
 y mostrar el tiempo que tomará el viaje en horas. */
 
-$tdistance = $_POST['tdistance'];
+//Mi solución
+/* $tdistance = $_POST['tdistance'];
 $average_speed = $_POST['average_speed'];
 
 $end_time = $tdistance / $average_speed;
-echo "Vas a tardar $end_time horas en llegar";
+echo "Vas a tardar $end_time horas en llegar"; */
+
+//otra solucion 
+/*
+
+*/
+if (isset(($tdistance)) && isset($average_speed)){
+
+    if (is_numeric($tdistance) && is_numeric($average_speed)){
+        $end_time = $tdistance / $average_speed;
+        echo "Vas a tardar $end_time horas en llegar";
+    }else{
+        echo "No es un número";
+    }
+}
 ?>
+<br>
+<a href="viaje.html">Atrás</a>
