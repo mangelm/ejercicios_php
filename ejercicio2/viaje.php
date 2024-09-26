@@ -18,7 +18,7 @@ echo "Vas a tardar $end_time horas en llegar"; */
 
 */
 if (isset(($tdistance)) && isset($average_speed)){
-
+    //verificamos si es un número
     if (is_numeric($tdistance) && is_numeric($average_speed)){
         $end_time = $tdistance / $average_speed;
         echo "Vas a tardar $end_time horas en llegar";
