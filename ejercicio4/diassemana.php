@@ -24,9 +24,10 @@ Si el número está fuera de ese rango, muestra un mensaje de error. */
 // else{
 //     echo "Ese dia no esta en el rango, debe estar entre 1 y 7";
 // };
-$day = $_POST['day'];
+
 //Otro metodo
-if (isset($day)) {
+if (isset($_POST['day'])) {
+    $day = $_POST['day'];
     switch ($day) {
         case '1':
             echo "Lunes";
